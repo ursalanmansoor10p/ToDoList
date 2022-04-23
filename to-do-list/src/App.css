@@ -1,0 +1,43 @@
+.App{
+    width: 300px;
+    
+    background-color: red;
+    align-items: center;
+    
+}
+.todoDisplay{
+    align-items: center;
+    background-color: wheat;
+}
+
+.button-complete{
+
+  
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 7px;
+        margin-left: 7px;
+        margin-bottom: 7px;
+        border-radius: 100px;
+}
+
+.list{
+    margin-top: 7px;
+    border:none;
+    background-color: red;
+}
+
+.btn_container{
+    align-items: center;
+    justify-content: center;
+}
+.addcontainer{
+    align-items: center;
+    justify-content: center;
+}

@@ -18,8 +18,12 @@ export default function AddTodo() {
     }
 
     return (
+        <div>
         <form onSubmit={handleSubmit}>
-            <div>
+            <div
+            
+            >
+                               
                 <input
                 type="text"
                 placeholder="putsomething here"
@@ -32,6 +36,7 @@ export default function AddTodo() {
                 <button>add</button>
             </div>
         </form>
+        </div>
     );
 
 
