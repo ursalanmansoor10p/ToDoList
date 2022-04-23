@@ -5,9 +5,7 @@ import { collection, addDoc} from "firebase/firestore"
 export default function AddTodo() {
     const [title, setTitle] = React.useState("");
 
-    
-
-    const handleSubmit = async (e) => {
+        const handleSubmit = async (e) => {
         e.preventDefault();
         if(title !== ""){
             await addDoc(collection(db,'todos'), {
@@ -15,6 +13,7 @@ export default function AddTodo() {
                 completed: false,
             });
             setTitle("");
+            
         }
     }
 

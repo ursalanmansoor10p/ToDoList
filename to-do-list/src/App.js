@@ -1,14 +1,88 @@
 
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Title from './components/Title';
 import AddTodo from './components/AddTodo';
+import Todo from './components/TodoDisplay';
+import {collection, query, onSnapshot, doc, updateDoc, deleteDoc, getDocs, where} from "firebase/firestore"
+import { db } from "./firebase";
 
 function App() {
+  const [todos, setTodos] = React.useState([]);
+  const [td, setTd] = React.useState([]);
+  const tdCollectionRef = collection(db, 'todos')
+ 
+  useEffect (() => {
+    const getUsers = async () => {
+      const data = await getDocs(tdCollectionRef);
+      setTd(data);
+      console.log(td);
+    }
+  }, []);
+  
+
+  //Fetch the data from firebase db using useEffect Hook. 
+  //the [] as the second parameter means the useEffect will only run once
+  React.useEffect(() => {
+
+    // if you use the onSnapshot() method you constantly
+    // listen to a document as oppose to get() which listens once
+    // we want to listen constantly inorder for app to update 
+    // in real time
+
+    const q = query(collection(db, "todos"));
+    const unsub = onSnapshot(q, (querySnapshot)=>{
+      let todosArray = [];
+      querySnapshot.forEach((doc) => {
+        todosArray.push({...doc.data(), id: doc.id})
+      })
+      setTodos(todosArray);
+    })
+    return () => unsub()
+  }, []);
+
+  
+
+  const toggleComplete = async (todo) => {
+    await updateDoc(doc(db, "todos", todo.id), {
+      completed: !todo.completed
+    });
+
+  };
+
+  const handleDelete = async (id) => {
+    await deleteDoc(doc(db, 'todos', id))
+    
+  }
+
+ 
+
+// Create a query against the collection
+  
+
   return (
     <div className="App">
-    <Title />
+    <div>
+  
+    
+    <div>
+      {todos.map((todo) => (
+        <Todo
+        key={todo.id}
+        todo={todo}
+        toggleComplete={toggleComplete}
+        handleDelete={handleDelete}
+        />
+      ))}
+    </div>
+
+    </div>
+    <div>
     <AddTodo />
+    </div>
+
+    
+    
     </div>
   );
 }
