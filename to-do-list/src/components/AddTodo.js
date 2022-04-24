@@ -23,9 +23,10 @@ export default function AddTodo() {
             <div className="input_container">                
                 <input
                 type="text"
-                placeholder="putsomething here"
+                placeholder="Please enter Todo"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
+                className="input_style"
             />
             </div>
             <div className="btn_container">

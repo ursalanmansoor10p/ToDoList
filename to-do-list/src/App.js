@@ -63,15 +63,11 @@ function App() {
     <div className="App">
       <div className="form_design">
        <div className="tabs">
-          <button
-            
-          >
-            <ImList />
+          <button className='tab_btn left'>
+            <ImList className = 'tab_icons disabled' />
           </button>
-          <button
-           
-          >
-            <BsCalendarCheck
+          <button className='tab_btn right active'>
+            <BsCalendarCheck className = "tab_icons"
               
             />
           </button>
