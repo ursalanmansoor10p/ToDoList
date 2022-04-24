@@ -56,7 +56,6 @@ function App() {
 
   const handleDelete = async (id) => {
     await deleteDoc(doc(db, 'todos', id))
-    
   }
 
  
@@ -68,11 +67,11 @@ console.log(listView);
     <div className="App">
       <div className="form_design">
        <div className="tabs">
-          <button className='tab_btn left active' onClick={() => selectListView(true)}>
-            <ImList className = 'tab_icons ' />
+          <button className={listView ? "tab_btn left active" : "tab_btn left"} onClick={() => selectListView(true)}>
+            <ImList className = {listView ? "tab_icons" : "tab_icons disabled"} />
           </button>
-          <button className='tab_btn right ' onClick={() => selectListView(false)}>
-            <BsCalendarCheck className = "tab_icons disabled"
+          <button className={!listView ? "tab_btn right active" : "tab_btn right"} onClick={() => selectListView(false)}>
+            <BsCalendarCheck className = {listView ? "tab_icons disabled" : "tab_icons"}
               
             />
           </button>

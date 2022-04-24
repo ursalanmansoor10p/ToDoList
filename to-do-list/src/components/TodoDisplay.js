@@ -1,6 +1,7 @@
 import React from "react";
 
-
+import Checkbox from "react-custom-checkbox";
+import { FaTrashAlt } from "react-icons/fa";
 export default function Todo(
     {
         todo,
@@ -22,34 +23,29 @@ export default function Todo(
 
             }
         }
-/*<button
-className="button-delete"
-onClick={() => handleDelete(todo.id)}>
-    delete
-</button>*/
         return(
             <div className='to'>
-                <button 
-                className="button-complete"
-                onClick={()=> toggleComplete(todo)}>
-                
-                </button>
+                <Checkbox
+                checked={todo.completed}
+                icon={
+                    <img src={require("./check.png")} style={{ width: 24 }} alt="" />
+                }
+                borderColor="rgba(0, 0, 0, 0.452)"
+                size={18}
+                onChange={() => toggleComplete(todo)}
+                />
 
-                <input
-                style = {{ textDecoration: todo.completed && "line-through"}}
-                type="text"
-                value={todo.title === "" ? newTitle : todo.title}
-                className='list'
-                onChange={handleChange}/>
-                
-                <button
-                className="button-delete"
-                onClick={() => handleDelete(todo.id)}>
-                    delete
-                </button>
-                                
-                
-                
+                <div>{todo.completed === true ? <del>{newTitle}</del> : newTitle}</div>
+                <div>
+                <div>
+                    <button
+                        className="button-delete"
+                        onClick={() => handleDelete(todo.id)}
+                    >
+                        <FaTrashAlt />
+                    </button>
+                </div>
+            </div>
             </div>
             
         );
