@@ -32,7 +32,7 @@ onClick={() => handleDelete(todo.id)}>
                 <button 
                 className="button-complete"
                 onClick={()=> toggleComplete(todo)}>
-                        
+                
                 </button>
 
                 <input
@@ -43,11 +43,11 @@ onClick={() => handleDelete(todo.id)}>
                 onChange={handleChange}/>
                 
                 <button
-className="button-delete"
-onClick={() => handleDelete(todo.id)}>
-    delete
-</button>
-                
+                className="button-delete"
+                onClick={() => handleDelete(todo.id)}>
+                    delete
+                </button>
+                                
                 
                 
             </div>

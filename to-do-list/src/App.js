@@ -11,15 +11,12 @@ function App() {
   const [todos, setTodos] = React.useState([]);
   const [td, setTd] = React.useState([]);
   const tdCollectionRef = collection(db, 'todos')
- 
-  useEffect (() => {
-    const getUsers = async () => {
-      const data = await getDocs(tdCollectionRef);
-      setTd(data);
-      console.log(td);
-    }
-  }, []);
   
+  
+  
+  
+
+
 
   //Fetch the data from firebase db using useEffect Hook. 
   //the [] as the second parameter means the useEffect will only run once
@@ -29,7 +26,7 @@ function App() {
     // listen to a document as oppose to get() which listens once
     // we want to listen constantly inorder for app to update 
     // in real time
-
+   
     const q = query(collection(db, "todos"));
     const unsub = onSnapshot(q, (querySnapshot)=>{
       let todosArray = [];
@@ -75,6 +72,7 @@ function App() {
         />
       ))}
     </div>
+    
 
     </div>
     <div>
