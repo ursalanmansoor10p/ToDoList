@@ -6,7 +6,10 @@ body {
     font-size: 20px !important;
     height: 100vh;
   }
-  
+/*
+Animication into three parts 
+split into positions 
+*/
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -21,17 +24,64 @@ body {
   
 
 
-.App{
-    width: 300px;
-    
-    background-color: red;
+  .App {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
     align-items: center;
-    
-}
-.todoDisplay{
-    align-items: center;
-    background-color: wheat;
-}
+    /* width and height are nessessary to center*/
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+  }
+
+  .form_design {
+    background: white;
+  
+    border-radius: 15px;
+    box-shadow: 12px -5px 19px 0px rgba(0, 0, 0, 0.75);
+    padding-bottom: 20px;
+  }
+  .tabs {
+    display: flex;
+  }
+  .tab_btn {
+    width: 50%;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tab_icons {
+    color: purple;
+    font-size: 18px;
+  }
+  .tab_icons.disabled {
+    color: rgb(156, 147, 147);
+  }
+
+.left {
+    border-radius: 15px 0px 0px;
+    border-right: 1px solid rgba(0, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    background: rgb(246, 246, 246);
+  }
+  .left.active {
+    background: rgb(255, 255, 255);
+    border: none;
+  }
+
+  .right {
+    border-radius: 0 15px 0px 0px;
+    border-left: 1px solid rgba(0, 0, 0, 0.377);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    background: rgb(246, 246, 246);
+  }
+  .right.active {
+    background: rgb(255, 255, 255);
+    border: none;
+  }
 
 .button-complete{
 
