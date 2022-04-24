@@ -35,6 +35,7 @@ split into positions
     height: 100vh;
     background: transparent;
   }
+  
 
   .form_design {
     background: white;
@@ -114,3 +115,24 @@ split into positions
     align-items: center;
     justify-content: center;
 }
+
+/* to align the three column of todoDisplay, You have to wrap 
+flexbox. All nessessary adjustments are made with padding margin etc */
+
+.to {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+    width: 200px;
+    padding: 10px 50px;
+  }
+
+  .button-delete {
+    color: red;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
