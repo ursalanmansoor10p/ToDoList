@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Title from './components/Title';
 import AddTodo from './components/AddTodo';
 import Todo from './components/TodoDisplay';
@@ -8,11 +8,16 @@ import {collection, query, onSnapshot, doc, updateDoc, deleteDoc, getDocs, where
 import { db } from "./firebase";
 import { ImList } from "react-icons/im";
 import { BsCalendarCheck } from "react-icons/bs";
+import CalendarTask from './components/CalendarTask';
 
 function App() {
   const [todos, setTodos] = React.useState([]);
   const [td, setTd] = React.useState([]);
-  const tdCollectionRef = collection(db, 'todos')
+  const tdCollectionRef = collection(db, 'todos');
+  // when list view is true we will get the normal task
+  // when false we will get completed calendar tasks
+  const [listView, selectListView] = useState(true);
+
   
   
   
@@ -58,31 +63,37 @@ function App() {
 
 // Create a query against the collection
   
-
+console.log(listView);
   return (
     <div className="App">
       <div className="form_design">
        <div className="tabs">
-          <button className='tab_btn left'>
-            <ImList className = 'tab_icons disabled' />
+          <button className='tab_btn left active' onClick={() => selectListView(true)}>
+            <ImList className = 'tab_icons ' />
           </button>
-          <button className='tab_btn right active'>
-            <BsCalendarCheck className = "tab_icons"
+          <button className='tab_btn right ' onClick={() => selectListView(false)}>
+            <BsCalendarCheck className = "tab_icons disabled"
               
             />
           </button>
         </div>
 
         <div>
-      {todos.map((todo) => (
-        <Todo
-        key={todo.id}
-        todo={todo}
-        toggleComplete={toggleComplete}
-        handleDelete={handleDelete}
-        />
-      ))}
-        <AddTodo />
+        {listView ? (
+          <div>
+            {todos.map((todo) => (
+              <Todo
+                key={todo.id}
+                todo={todo}
+                toggleComplete={toggleComplete}
+                handleDelete={handleDelete}
+              />
+            ))}
+            <AddTodo />
+          </div>
+        ) : (
+          <CalendarTask todos={todos} />
+        )}
     </div>
 
 
