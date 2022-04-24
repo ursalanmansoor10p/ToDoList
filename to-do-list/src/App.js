@@ -6,6 +6,8 @@ import AddTodo from './components/AddTodo';
 import Todo from './components/TodoDisplay';
 import {collection, query, onSnapshot, doc, updateDoc, deleteDoc, getDocs, where} from "firebase/firestore"
 import { db } from "./firebase";
+import { ImList } from "react-icons/im";
+import { BsCalendarCheck } from "react-icons/bs";
 
 function App() {
   const [todos, setTodos] = React.useState([]);
@@ -59,10 +61,23 @@ function App() {
 
   return (
     <div className="App">
-    <div>
-  
-    
-    <div>
+      <div className="form_design">
+       <div className="tabs">
+          <button
+            
+          >
+            <ImList />
+          </button>
+          <button
+           
+          >
+            <BsCalendarCheck
+              
+            />
+          </button>
+        </div>
+
+        <div>
       {todos.map((todo) => (
         <Todo
         key={todo.id}
@@ -71,15 +86,13 @@ function App() {
         handleDelete={handleDelete}
         />
       ))}
-    </div>
-    
-
-    </div>
-    <div>
-    <AddTodo />
+        <AddTodo />
     </div>
 
-    
+
+        
+        </div>
+      
     
     </div>
   );
