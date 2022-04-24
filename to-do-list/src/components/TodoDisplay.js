@@ -40,8 +40,7 @@ export default function Todo(
                 <div>
                     <button
                         className="button-delete"
-                        onClick={() => handleDelete(todo.id)}
-                    >
+                        onClick={() => handleDelete(todo.id)}>
                         <FaTrashAlt />
                     </button>
                 </div>

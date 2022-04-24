@@ -18,22 +18,24 @@ export default function AddTodo() {
     }
 
     return (
-        <div className='addcontainer'>
+        <div>
         <form onSubmit={handleSubmit}>
-            <div className="input_container">                
-                <input
-                type="text"
-                placeholder="Please enter Todo"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                className="input_style"
+          <div className="input_container">
+            <input
+              type="text"
+              placeholder="Please enter text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              className="input_style"
             />
-            </div>
             <div className="btn_container">
-                <button>add</button>
-            </div>
+            <button class="button button1">+</button>
+             </div>
+
+          </div>
+          
         </form>
-        </div>
+      </div>
     );
 
 

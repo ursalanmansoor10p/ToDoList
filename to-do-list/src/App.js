@@ -57,7 +57,7 @@ function App() {
   const handleDelete = async (id) => {
     await deleteDoc(doc(db, 'todos', id))
   }
-
+console.log(todos);
  
 
 // Create a query against the collection
@@ -77,7 +77,7 @@ console.log(listView);
           </button>
         </div>
 
-        <div>
+        
         {listView ? (
           <div>
             {todos.map((todo) => (
@@ -93,7 +93,7 @@ console.log(listView);
         ) : (
           <CalendarTask todos={todos} />
         )}
-    </div>
+    
 
 
         
