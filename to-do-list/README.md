@@ -4,7 +4,7 @@ App Programmed by Khizr Masud
 
 ## Organization app for daily use
 
-This app allows you to keep track of daily tasks and tick completed task as necessary
+This app allows you to keep track of daily tasks and tick off completed tasks
 
 ## Stack 
 
