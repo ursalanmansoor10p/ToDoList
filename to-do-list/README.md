@@ -1,3 +1,34 @@
+# Todo List App
+
+App Programmed by Khizr Masud
+
+## Organization app for daily use
+
+This app allows you to keep track of daily tasks and tick off completed tasks
+
+## Stack 
+
+Front End: React
+
+Back End: Firebase 
+
+Test: Jest
+
+## How to get project running!
+
+### 1. Pull git repository
+### 2. Open Visual Studio
+### 3. Open folder (where you pulled the project)
+### 4. Open terminal inside project
+### 5. run npm install
+### 6. run npm start
+### 7. Go to localhost:3000 
+### 8. Enjoy the App!
+
+_____
+_____
+_____
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
