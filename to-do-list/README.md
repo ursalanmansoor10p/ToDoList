@@ -15,7 +15,14 @@ This app allows you to keep track of daily tasks and tick completed task as nece
 ## How to get project running!
 
 ### 1. Pull git repository
-### 2. run npm install
+### 2. Open Visual Studio
+### 3. Open folder (where you pulled the project)
+### 4. Open terminal inside project
+### 5. run npm install
+### 6. run npm start
+### 7. Go to localhost:3000 
+### 8. Enjoy the App!
+
 
 All necessary packages will be installed due to package.json
 
