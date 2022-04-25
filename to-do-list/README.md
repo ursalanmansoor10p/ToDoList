@@ -4,7 +4,8 @@ App Programmed by Khizr Masud
 
 ## Organization app for daily use
 
-This all allows you to keep track of daily tasks. Tick completed task as necessary
+This app allows you to keep track of daily tasks and tick completed task as necessary
+
 Front End: React
 Back End: Firebase 
 Test: Jest
