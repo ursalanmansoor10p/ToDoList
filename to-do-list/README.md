@@ -25,8 +25,9 @@ Test: Jest
 ### 7. Go to localhost:3000 
 ### 8. Enjoy the App!
 
-
-All necessary packages will be installed due to package.json
+_____
+_____
+_____
 
 # Getting Started with Create React App
 
