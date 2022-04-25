@@ -2,18 +2,18 @@ import React from 'react'
 
 function CalendarTask( {todos} ) {
 
-console.log("todos",todos)
+console.log("calendar",todos)
 
-const findCompletedTasks = todos.filter((todo) => todo.completed === true);
+const filteredTodos = todos.filter((todos) => todos.completed === true);
   
-console.log("ok",findCompletedTasks)
+console.log("ok",filteredTodos)
 return (
     <div className="to">
       {!todos.length > 0 ? (
         <p>Sorry there are no completed tasks</p>
       ) : (
         <ul>
-          {findCompletedTasks.map((task) => (
+          {filteredTodos.map((task) => (
             <li style={{ marginBottom: "20px" }}>{task.title}</li>
           ))}
         </ul>

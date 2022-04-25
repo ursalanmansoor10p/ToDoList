@@ -3,14 +3,21 @@ import React from "react";
 import Checkbox from "react-custom-checkbox";
 import { FaTrashAlt } from "react-icons/fa";
 export default function Todo(
+    //Props that are handed down 
+    //todo is the collection database object
+    //togglecomplete is the reference to the parent function
+    //handleDelete is the reference to the parent function
     {
         todo,
         toggleComplete,
         handleDelete,
-        handleEdit
+       
     })
     {
+        //have a state of all todo titles for conditional rendering 
         const [newTitle, setNewTitle] = React.useState(todo.title);
+
+        console.log("todo",todo)
 
         const handleChange = (e) => {
             e.preventDefault();
@@ -23,28 +30,33 @@ export default function Todo(
 
             }
         }
-        return(
-            <div className='to'>
-                <Checkbox
-                checked={todo.completed}
-                icon={
-                    <img src={require("./check.png")} style={{ width: 24 }} alt="" />
-                }
-                borderColor="rgba(0, 0, 0, 0.452)"
-                size={18}
-                onChange={() => toggleComplete(todo)}
-                />
 
-                <div>{todo.completed === true ? <del>{newTitle}</del> : newTitle}</div>
+        return(
+            // the display div is split into three things, check mark. display and 
+            //delete button
+            <div className='to'>
+                        <Checkbox
+                        checked={todo.completed}
+                        icon={
+                            <img src={require("./check.png")} style={{ width: 24 }} alt="" />}
+                        borderColor="rgba(0, 0, 0, 0.452)"
+                        size={18}
+                        onChange={() => toggleComplete(todo)}
+                        />
+                {/* conditional renders if completed should be crossed out  */}
+                        <div>{todo.completed === true ? <del>{newTitle}</del> : newTitle}
+                        </div>
                 <div>
-                <div>
-                    <button
-                        className="button-delete"
-                        onClick={() => handleDelete(todo.id)}>
-                        <FaTrashAlt />
-                    </button>
+                    <div>
+
+                       {/*  delete references the handle delete function from parent */}
+                        <button
+                            className="button-delete"
+                            onClick={() => handleDelete(todo.id)}>
+                            <FaTrashAlt />
+                        </button>
+                    </div>
                 </div>
-            </div>
             </div>
             
         );

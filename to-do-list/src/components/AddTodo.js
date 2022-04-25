@@ -6,14 +6,16 @@ export default function AddTodo() {
     const [title, setTitle] = React.useState("");
 
         const handleSubmit = async (e) => {
+        //e.preventDefault(); prevents any reload when submitting
+        //form 
         e.preventDefault();
         if(title !== ""){
             await addDoc(collection(db,'todos'), {
+               // Data should be passed as object
                 title,
                 completed: false,
             });
             setTitle("");
-            
         }
     }
 

@@ -1,18 +1,21 @@
 import { initializeApp } from 'firebase/app';
+// TIP: Do not import from firestorelite. Will cause many errors
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
+const config = require('./config');
+const { db: { apiKey, authDomain, projectId , storageBucket, messagingSenderId, appId} } = config;
 
 // The web applications Firebase configuration 
 const firebaseConfig = {
-    apiKey: "AIzaSyDSKYtnfrrW6iji2FaF36JiEMPyM1FrPPg",
-    authDomain: "to-do-list-76a9f.firebaseapp.com",
-    projectId: "to-do-list-76a9f",
-    storageBucket: "to-do-list-76a9f.appspot.com",
-    messagingSenderId: "753153106441",
-    appId: "1:753153106441:web:4fa59aaf25bdb2dc418ed8"
+    apiKey,
+    authDomain,
+    projectId,
+    storageBucket,
+    messagingSenderId,
+    appId
   };
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-
+  // export db to skip repeated initializations 
   export { db };
