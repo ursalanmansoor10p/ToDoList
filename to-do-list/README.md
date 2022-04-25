@@ -6,14 +6,18 @@ App Programmed by Khizr Masud
 
 This app allows you to keep track of daily tasks and tick completed task as necessary
 
-Front End: React
+### Front End: React
 
-Back End: Firebase 
+### Back End: Firebase 
 
-Test: Jest
+### Test: Jest
 
-### Challenges Faced: 
+## How to get project running!
 
+### 1. Pull git repository
+### 2. run npm install
+
+All necessary packages will be installed due to package.json
 
 # Getting Started with Create React App
 
