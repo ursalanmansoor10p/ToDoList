@@ -1,7 +1,14 @@
 # Todo List App
-_ _ _ _ 
-## This app is a db intigrated Todo app that organized the tasks that are needed to be completed through out the day
 
+App Programmed by Khizr Masud
+
+## Organization app for daily use
+
+This all allows you to keep track of daily tasks. Tick completed task as necessary
+Front End: React
+Back End: Firebase 
+Test: Jest
+Challenges Faced: 
 
 
 # Getting Started with Create React App
