@@ -84,13 +84,13 @@ function App() {
             />
           </button>
         </div>
-        {/* if listview is true then pass then display 
-        TodoDisplay.js */}
+        {/* if listview is true then pass then display  */}
+        
         {listView ? (
           <div>
             
             {todos.map((todo) => (
-
+              // todo is db iteration passed down as object
               <div>
               <Todo
                 key={todo.id}
@@ -105,6 +105,7 @@ function App() {
             <AddTodo />
           </div>
           // if list view is false show CalenderTask
+          // todos is the db state 
         ) : (
           <CalendarTask todos={todos} />
         )}
