@@ -12,7 +12,7 @@ Back End: Firebase
 
 Test: Jest
 
-###Challenges Faced: 
+### Challenges Faced: 
 
 
 # Getting Started with Create React App
