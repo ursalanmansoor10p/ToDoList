@@ -1,3 +1,9 @@
+#Todo List App
+
+## This app is a db intigrated Todo app that organized the tasks that are needed to be completed through out the day
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
