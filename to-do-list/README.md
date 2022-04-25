@@ -6,11 +6,13 @@ App Programmed by Khizr Masud
 
 This app allows you to keep track of daily tasks and tick completed task as necessary
 
-### Front End: React
+## Stack 
 
-### Back End: Firebase 
+Front End: React
 
-### Test: Jest
+Back End: Firebase 
+
+Test: Jest
 
 ## How to get project running!
 
