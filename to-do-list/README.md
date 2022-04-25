@@ -1,6 +1,5 @@
 # Todo List App
-____
-
+_ _ _ _ 
 ## This app is a db intigrated Todo app that organized the tasks that are needed to be completed through out the day
 
 
