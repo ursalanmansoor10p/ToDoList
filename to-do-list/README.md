@@ -29,7 +29,7 @@ _____
 _____
 _____
 
-## Project Image Sample
+## Project Image
 
 [React App.pdf](https://github.com/KhizrMasud/ToDoList/files/8559476/React.App.pdf)
 
