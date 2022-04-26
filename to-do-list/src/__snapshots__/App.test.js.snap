@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="form_design"
+    >
+      <div
+        class="tabs"
+      >
+        <button
+          class="tab_btn left active"
+        >
+          <svg
+            class="tab_icons"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h4v4h-4zM6 1h10v2h-10zM0 6h4v4h-4zM6 7h10v2h-10zM0 12h4v4h-4zM6 13h10v2h-10z"
+            />
+          </svg>
+        </button>
+        <button
+          class="tab_btn right"
+        >
+          <svg
+            class="tab_icons disabled"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div>
+        <div>
+          <div
+            class="to"
+            data-testid="todo-display"
+          >
+            <label
+              class=""
+              style="display: flex; align-items: center;"
+            >
+              <span>
+                <div
+                  class=""
+                  style="height: 18px; width: 18px; border-width: 2px; border-color: rgba(0, 0, 0, 0.452); border-style: solid; border-radius: 5px; display: flex; align-items: center; justify-content: center;"
+                >
+                  <input
+                    data-testid="checkbox"
+                    hidden=""
+                    name=""
+                    type="checkbox"
+                    value=""
+                  />
+                </div>
+              </span>
+            </label>
+            <div
+              data-testid="todo-title"
+            >
+              abc
+            </div>
+            <div>
+              <div>
+                <button
+                  class="button-delete"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="to"
+            data-testid="todo-display"
+          >
+            <label
+              class=""
+              style="display: flex; align-items: center;"
+            >
+              <span>
+                <div
+                  class=""
+                  style="height: 18px; width: 18px; border-width: 2px; border-color: rgba(0, 0, 0, 0.452); border-style: solid; border-radius: 5px; display: flex; align-items: center; justify-content: center;"
+                >
+                  <img
+                    alt=""
+                    src="check.png"
+                    style="width: 24px;"
+                  />
+                  <input
+                    checked=""
+                    data-testid="checkbox"
+                    hidden=""
+                    name=""
+                    type="checkbox"
+                    value=""
+                  />
+                </div>
+              </span>
+            </label>
+            <div
+              data-testid="todo-title"
+            >
+              <del>
+                xyz
+              </del>
+            </div>
+            <div>
+              <div>
+                <button
+                  class="button-delete"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-testid="add-todo"
+        >
+          <form
+            name="add-form"
+          >
+            <div
+              class="input_container"
+            >
+              <input
+                class="input_style"
+                placeholder="Please enter text"
+                type="text"
+                value=""
+              />
+              <div
+                class="btn_container"
+              >
+                <button
+                  class="button button1"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

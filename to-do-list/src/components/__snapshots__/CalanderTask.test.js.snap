@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalendarTask Component should match snapshot with todos 1`] = `
+<div>
+  <div
+    class="to"
+    data-testid="calendar-tasks"
+  >
+    <ul>
+      <li
+        style="margin-bottom: 20px;"
+      />
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`CalendarTask Component should match snapshot without todos 1`] = `
+<div>
+  <div
+    class="to"
+    data-testid="calendar-tasks"
+  >
+    <p>
+      Sorry there are no completed tasks
+    </p>
+  </div>
+</div>
+`;

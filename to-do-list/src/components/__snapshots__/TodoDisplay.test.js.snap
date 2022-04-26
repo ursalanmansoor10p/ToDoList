@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoDisplay Component should match snapshot 1`] = `
+<div>
+  <div
+    class="to"
+    data-testid="todo-display"
+  >
+    <label
+      class=""
+      style="display: flex; align-items: center;"
+    >
+      <span>
+        <div
+          class=""
+          style="height: 18px; width: 18px; border-width: 2px; border-color: rgba(0, 0, 0, 0.452); border-style: solid; border-radius: 5px; display: flex; align-items: center; justify-content: center;"
+        >
+          <input
+            data-testid="checkbox"
+            hidden=""
+            name=""
+            type="checkbox"
+            value=""
+          />
+        </div>
+      </span>
+    </label>
+    <div
+      data-testid="todo-title"
+    >
+      abc
+    </div>
+    <div>
+      <div>
+        <button
+          class="button-delete"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

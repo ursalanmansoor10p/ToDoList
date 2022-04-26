@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodo Component should match snapshot 1`] = `
+<div>
+  <div
+    data-testid="add-todo"
+  >
+    <form
+      name="add-form"
+    >
+      <div
+        class="input_container"
+      >
+        <input
+          class="input_style"
+          placeholder="Please enter text"
+          type="text"
+          value=""
+        />
+        <div
+          class="btn_container"
+        >
+          <button
+            class="button button1"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

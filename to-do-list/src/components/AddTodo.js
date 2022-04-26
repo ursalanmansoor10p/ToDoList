@@ -16,12 +16,12 @@ export default function AddTodo() {
                 completed: false,
             });
             setTitle("");
-        }
+          }
     }
 
     return (
-        <div>
-        <form onSubmit={handleSubmit}>
+        <div data-testid="add-todo" >
+        <form name="add-form" onSubmit={handleSubmit}>
           <div className="input_container">
             <input
               type="text"
@@ -31,7 +31,7 @@ export default function AddTodo() {
               className="input_style"
             />
             <div className="btn_container">
-            <button class="button button1">+</button>
+            <button className="button button1">+</button>
              </div>
 
           </div>
